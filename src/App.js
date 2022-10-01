@@ -4,6 +4,7 @@ import Project from './components/Project';
 import { useState } from 'react';
 import Footer from './components/Footer';
 import About from './components/About';
+import Contact from './components/Contact';
 
 function App() {
   const [projects] = useState([
@@ -61,6 +62,7 @@ function App() {
         currentProject= {currentProject}
       />
       <About />
+      <Contact />
       <Footer />
     </div>
   );
