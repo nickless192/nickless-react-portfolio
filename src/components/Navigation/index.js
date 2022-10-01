@@ -14,15 +14,22 @@ function Navigation ({currentProject, setCurrentProject, projects, sectionSelect
                     </li>
                     <li className={`${sectionSelected === "My Portfolio" && 'navActive'}`}>
                         <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic">
+                            <Dropdown.Toggle variant="success" id="dropdown-basic"
+                            onClick={(e) => {
+                                // console.log(e.target)
+                                setSectionSelected(e.target.textContent);
+                            }}
+                            >
                                 My Portfolio
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <span onClick={(e) => {
-                                    console.log(e.target)
-                                }}>
-                                    {projects.map((project) => (
-                                        <Dropdown.Item href="#" key={project.name}>{project.name}</Dropdown.Item>    
+                                <span>
+                                    {projects.map((project, i) => (
+                                        <Dropdown.Item href="#" key={project.name}
+                                            onClick={() => {
+                                                setCurrentProject(projects[i]);
+                                            }}
+                                        >{project.name}</Dropdown.Item>    
                                     ))}
                                 </span>
                                 {/* <Dropdown.Item href="#">Run Buddy</Dropdown.Item>
