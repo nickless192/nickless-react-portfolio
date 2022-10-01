@@ -1,60 +1,51 @@
-import React from "react";
-import { Dropdown } from "react-bootstrap";
+import React, { useState } from "react";
+import Dropdown from "react-bootstrap/Dropdown";
+import NavItem from 'react-bootstrap/NavItem';
+import NavLink from 'react-bootstrap/NavLink';
 
 function Navigation ({currentProject, setCurrentProject, projects, sectionSelected, setSectionSelected}) {
+    const [sections] = useState([
+        {
+            name: 'About Me'
+        },
+        {
+            name: 'My Resume'
+        },
+        {
+            name: 'Contact Me'
+        }
+    ])
     return (
         <div>
             <nav>
                 <ul className="flex-row">
-                    <li className={`${sectionSelected === "About Me" && 'navActive'}`}>
-                        <span onClick={(e) => {
-                            // console.log(e.target.textContent)
-                            setSectionSelected(e.target.textContent);
-                        }}>About Me</span>
-                    </li>
                     <li className={`${sectionSelected === "My Portfolio" && 'navActive'}`}>
-                        <Dropdown>
-                            <Dropdown.Toggle variant="success" id="dropdown-basic"
-                            onClick={(e) => {
-                                // console.log(e.target)
-                                setSectionSelected(e.target.textContent);
-                            }}
-                            >
-                                My Portfolio
-                            </Dropdown.Toggle>
+                        <Dropdown as={NavItem}>
+                            <Dropdown.Toggle as={NavLink}>My Portfolio</Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <span>
-                                    {projects.map((project, i) => (
+                            {projects.map((project, i) => (
                                         <Dropdown.Item href="#" key={project.name}
-                                            onClick={() => {
+                                            onClick={(e) => {
+                                                console.dir(e.target)
+                                                setSectionSelected("My Portfolio");
                                                 setCurrentProject(projects[i]);
                                             }}
                                         >{project.name}</Dropdown.Item>    
                                     ))}
-                                </span>
-                                {/* <Dropdown.Item href="#">Run Buddy</Dropdown.Item>
-                                <Dropdown.Item href="#">Horiseon</Dropdown.Item> */}
                             </Dropdown.Menu>
                         </Dropdown>
                     </li>
-                    <li>
-                        <span onClick={(e) => {
-                            // console.log(e.target.textContent)
-                            setSectionSelected(e.target.textContent);
-                        }}>My Portfolio</span>
-                    </li>
-                    <li className={`${sectionSelected === "My Resume" && 'navActive'}`}>
-                        <span onClick={(e) => {
-                            // console.log(e.target.textContent)
-                            setSectionSelected(e.target.textContent);
-                        }}>My Resume</span>
-                    </li>
-                    <li className={`${sectionSelected === "Contact Me" && 'navActive'}`}>
-                        <span onClick={(e) => {
-                            // console.log(e.target.textContent)
-                            setSectionSelected(e.target.textContent);
-                        }}>Contact Me</span>
-                    </li>
+                    {sections.map((section) => (
+                        <li 
+                        className={`${sectionSelected === `${section.name}` && 'navActive'}`}
+                        key={section.name}
+                        >
+                            <span onClick={(e) => {
+                                // console.log(e.target.textContent)
+                                setSectionSelected(section.name);
+                            }}>{section.name}</span>
+                        </li>                        
+                    ))}
                 </ul>
             </nav>
         </div>

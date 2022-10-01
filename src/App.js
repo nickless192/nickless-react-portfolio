@@ -5,6 +5,8 @@ import { useState } from 'react';
 import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
+import Resume from './components/Resume';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [projects] = useState([
@@ -58,11 +60,20 @@ function App() {
         setSectionSelected = {setSectionSelected}
 
       />
-      <Project
-        currentProject= {currentProject}
-      />
-      <About />
-      <Contact />
+      {sectionSelected === 'About Me' &&
+        <About />
+      }
+      {sectionSelected === 'My Resume' &&
+        <Resume />
+      }
+      {sectionSelected === 'Contact Me' &&
+        <Contact />      
+      }
+      {/* {sectionSelected === 'My Portfolio' &&  */}
+        <Project
+          currentProject= {currentProject}
+        />
+      {/* } */}
       <Footer />
     </div>
   );
