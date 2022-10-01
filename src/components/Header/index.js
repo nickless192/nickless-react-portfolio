@@ -1,11 +1,16 @@
 import React from "react";
 import Navigation from "../Navigation";
 
-function Header () {
+function Header ({currentProject, setCurrentProject, projects}) {
+
     return(
         <header className="flex-row">
             <h1>Nickless React Portfolio</h1>
-            <Navigation />
+            <Navigation
+            projects= {projects}
+            currentProject= {currentProject}
+            setCurrentProject= {setCurrentProject} 
+            />            
         </header>
     )
 }
