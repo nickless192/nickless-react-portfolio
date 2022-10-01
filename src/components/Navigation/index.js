@@ -1,18 +1,18 @@
 import React from "react";
 import { Dropdown } from "react-bootstrap";
 
-function Navigation ({currentProject, setCurrentProject, projects}) {
-
+function Navigation ({currentProject, setCurrentProject, projects, sectionSelected, setSectionSelected}) {
     return (
         <div>
             <nav>
                 <ul className="flex-row">
-                    <li>
+                    <li className={`${sectionSelected === "About Me" && 'navActive'}`}>
                         <span onClick={(e) => {
-                            console.log(e.target.textContent)
+                            // console.log(e.target.textContent)
+                            setSectionSelected(e.target.textContent);
                         }}>About Me</span>
                     </li>
-                    <li>
+                    <li className={`${sectionSelected === "My Portfolio" && 'navActive'}`}>
                         <Dropdown>
                             <Dropdown.Toggle variant="success" id="dropdown-basic">
                                 My Portfolio
@@ -32,17 +32,20 @@ function Navigation ({currentProject, setCurrentProject, projects}) {
                     </li>
                     <li>
                         <span onClick={(e) => {
-                            console.log(e.target.textContent)
+                            // console.log(e.target.textContent)
+                            setSectionSelected(e.target.textContent);
                         }}>My Portfolio</span>
                     </li>
-                    <li>
+                    <li className={`${sectionSelected === "My Resume" && 'navActive'}`}>
                         <span onClick={(e) => {
-                            console.log(e.target.textContent)
+                            // console.log(e.target.textContent)
+                            setSectionSelected(e.target.textContent);
                         }}>My Resume</span>
                     </li>
-                    <li>
+                    <li className={`${sectionSelected === "Contact Me" && 'navActive'}`}>
                         <span onClick={(e) => {
-                            console.log(e.target.textContent)
+                            // console.log(e.target.textContent)
+                            setSectionSelected(e.target.textContent);
                         }}>Contact Me</span>
                     </li>
                 </ul>

@@ -1,7 +1,7 @@
 import React from "react";
 import Navigation from "../Navigation";
 
-function Header ({currentProject, setCurrentProject, projects}) {
+function Header ({currentProject, setCurrentProject, projects, sectionSelected, setSectionSelected}) {
 
     return(
         <header className="flex-row">
@@ -10,6 +10,8 @@ function Header ({currentProject, setCurrentProject, projects}) {
             projects= {projects}
             currentProject= {currentProject}
             setCurrentProject= {setCurrentProject} 
+            sectionSelected= {sectionSelected}
+            setSectionSelected = {setSectionSelected}
             />            
         </header>
     )

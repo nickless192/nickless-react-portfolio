@@ -3,6 +3,7 @@ import './App.css';
 import Project from './components/Project';
 import { useState } from 'react';
 import Footer from './components/Footer';
+import About from './components/About';
 
 function App() {
   const [projects] = useState([
@@ -19,6 +20,7 @@ function App() {
       githubURL: 'https://github.com/nickless192/HoriseonLandingPage'
     }
   ]);
+  const [sectionSelected, setSectionSelected] = useState("About Me");
 
   const [currentProject, setCurrentProject] = useState(projects[0]);
   return (
@@ -27,8 +29,11 @@ function App() {
         projects= {projects}
         currentProject= {currentProject}
         setCurrentProject= {setCurrentProject}
+        sectionSelected= {sectionSelected}
+        setSectionSelected = {setSectionSelected}
 
       />
+      <About />
       <Project
         currentProject= {currentProject}
       />
