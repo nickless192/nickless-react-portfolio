@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import About from './components/About';
 import Contact from './components/Contact';
 import Resume from './components/Resume';
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [projects] = useState([
@@ -51,7 +51,7 @@ function App() {
 
   const [currentProject, setCurrentProject] = useState(projects[0]);
   return (
-    <div>
+    <div className="container mx-auto bg-gray-200 shadow border p-8 ">
       <Header
         projects= {projects}
         currentProject= {currentProject}

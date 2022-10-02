@@ -17,11 +17,11 @@ function Navigation ({currentProject, setCurrentProject, projects, sectionSelect
     ])
     return (
         <div>
-            <nav>
-                <ul className="flex-row">
+            <nav className="navbar w-full flex flex-wrap items-center justify-between">
+                <ul className="w-full flex flex-wrap items-center justify-between">
                     <li className={`${sectionSelected === "My Portfolio" && 'navActive'}`}>
                         <Dropdown as={NavItem}>
-                            <Dropdown.Toggle as={NavLink}>My Portfolio</Dropdown.Toggle>
+                            <Dropdown.Toggle className="text-blue font-bold" as={NavLink}>My Portfolio</Dropdown.Toggle>
                             <Dropdown.Menu>
                             {projects.map((project, i) => (
                                         <Dropdown.Item href="#" key={project.name}
@@ -37,10 +37,10 @@ function Navigation ({currentProject, setCurrentProject, projects, sectionSelect
                     </li>
                     {sections.map((section) => (
                         <li 
-                        className={`${sectionSelected === `${section.name}` && 'navActive'}`}
+                        className={`${sectionSelected === `${section.name}` && 'navActive'} `}
                         key={section.name}
                         >
-                            <span onClick={(e) => {
+                            <span className="text-blue font-bold" onClick={(e) => {
                                 // console.log(e.target.textContent)
                                 setSectionSelected(section.name);
                             }}>{section.name}</span>
