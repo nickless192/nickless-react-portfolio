@@ -30,7 +30,7 @@ function About() {
                     </li>
                 </ul>
             </div>
-            <div>
+            <div className="w-6/12 sm:w-4/12 px-4">
                 <img src={profileImage} alt="Omar in front of the CN Tower in Toronto" id="profile-pic" />
             </div>
         </section>
