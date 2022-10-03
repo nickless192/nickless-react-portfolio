@@ -57,7 +57,7 @@ function App() {
 
   const [currentProject, setCurrentProject] = useState(projects[0]);
   return (
-    <div className="mx-auto bg-gray-200 shadow border p-8 max-w-full h-auto">
+    <div className="mx-auto bg-gray-200 shadow border max-w-full h-auto">
       <Header
         projects= {projects}
         currentProject= {currentProject}

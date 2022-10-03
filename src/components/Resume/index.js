@@ -32,11 +32,11 @@ function Resume() {
                     className="text-blue-300 text-2xl my-2"
                     >My Resume</h2>
             <div>
-                <p>Click the link below to download my current resume.</p>
+                <p className="my-2">Click the link below to download my current resume.</p>
                 <a href={resume} download="resume.pdf">My Resume</a>
             </div>
-            <div>
-                <h3>Some of my Amazing SKills!</h3>
+            <div className="my-2">
+                <h3>Some of my Amazing Skills!</h3>
                 <ul className="list-disc ml-5">
                     {skills.map((skill) => (
                         <li key={skill.name}>
