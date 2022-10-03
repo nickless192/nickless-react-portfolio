@@ -28,6 +28,10 @@ http://localhost:3000/
 
 to start using the application.
 
+Screenshots of the application are shown below:
+
+![Nickless React Portfolio Homepage](./src/assets/personal/nickless-react-portfolio-screenshot.png)
+
 
 ## Contribute
 
