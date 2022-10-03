@@ -34,21 +34,23 @@ function Contact () {
 
     return (
         <section>
-            <h2>Contact Me</h2>
+            <h2 
+                    className="text-blue-300 text-2xl my-2"
+                    >Contact Me</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}/>
+                <div className="w-1/2">
+                    <label htmlFor="name" className="font-bold">Name:</label>
+                    <input className="w-full m-2" type="text" name="name" defaultValue={name} onBlur={handleChange}/>
                 </div>
-                <div>
-                    <label htmlFor="email">Email:</label>
-                    <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+                <div className="w-1/2">
+                    <label htmlFor="email" className="font-bold">Email:</label>
+                    <input className="w-full m-2" type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
-                <div>
-                    <label htmlFor="message">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
+                <div className="w-1/2">
+                    <label htmlFor="message" className="font-bold">Message:</label>
+                    <textarea className="w-full m-2" name="message" rows="5" defaultValue={message} onBlur={handleChange}/>
                 </div>
-                <button type="submit">Submit</button>
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" type="submit">Submit</button>
             </form>
             {errorMessage && (
                 <div>

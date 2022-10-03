@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import Dropdown from "react-bootstrap/Dropdown";
-import NavItem from 'react-bootstrap/NavItem';
-import NavLink from 'react-bootstrap/NavLink';
 import { createPopper } from "@popperjs/core";
 
 function Navigation({ currentProject, setCurrentProject, projects, sectionSelected, setSectionSelected }) {
@@ -31,13 +28,13 @@ function Navigation({ currentProject, setCurrentProject, projects, sectionSelect
         }
     ]);
     return (
-        <div>
-            <nav className="navbar w-full flex flex-wrap items-center justify-between">
-                <ul className="w-full flex flex-wrap items-center justify-between">
-                    <li>
+        
+            <nav className="navbar flex flex-wrap items-center justify-between">
+                <ul className="flex flex-wrap items-center justify-between ">
+                    <li className="mx-2">
                         <div>
                             <span
-                                className={`${sectionSelected === "My Portfolio" && 'navActive'} text-blue font-bold`}
+                                className={`${sectionSelected === "My Portfolio" && 'text-blue-500'} text-blue font-bold cursor-pointer`}
                                 ref={btnDropdownRef}
                                 onClick={() => {
                                     dropdownPopoverShow
@@ -51,13 +48,17 @@ function Navigation({ currentProject, setCurrentProject, projects, sectionSelect
                                 ref={popoverDropdownRef}
                                 className={
                                     (dropdownPopoverShow ? "block " : "hidden ") +
-                                    "bg-white font-bold text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1"
+                                    "bg-gray-200 font-bold text-base z-50 float-left list-none text-left rounded shadow-lg mx-2"
                                 }
+                                onMouseLeave={() => {
+                                    closeDropdownPopover();
+                                }}
                             >
                                 {projects.map((project, i) => (
-                                    <p href="#" key={project.name}
+                                    <p 
+                                    className="cursor-pointer"
+                                    href="#" key={project.name}
                                         onClick={(e) => {
-                                            console.dir(e.target)
                                             setSectionSelected("My Portfolio");
                                             setCurrentProject(projects[i]);
                                             closeDropdownPopover();
@@ -69,10 +70,10 @@ function Navigation({ currentProject, setCurrentProject, projects, sectionSelect
                     </li>
                     {sections.map((section) => (
                         <li
-                            className={`${sectionSelected === `${section.name}` && 'navActive'} `}
+                            className={`${sectionSelected === `${section.name}` && 'text-blue-500'} mx-2 `}
                             key={section.name}
                         >
-                            <span className="text-blue font-bold" onClick={(e) => {
+                            <span className="text-blue font-bold cursor-pointer" onClick={(e) => {
                                 // console.log(e.target.textContent)
                                 setSectionSelected(section.name);
                             }}>{section.name}</span>
@@ -80,7 +81,7 @@ function Navigation({ currentProject, setCurrentProject, projects, sectionSelect
                     ))}
                 </ul>
             </nav>
-        </div>
+        
     )
 }
 
