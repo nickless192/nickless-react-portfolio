@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/nickless-react-portfolio/static/css/main.c8dccbd2.css",
-    "main.js": "/nickless-react-portfolio/static/js/main.91bc486a.js",
+    "main.css": "/nickless-react-portfolio/static/css/main.cbf8238f.css",
+    "main.js": "/nickless-react-portfolio/static/js/main.dd0d2652.js",
     "static/js/787.84bdce99.chunk.js": "/nickless-react-portfolio/static/js/787.84bdce99.chunk.js",
     "static/media/horiseon-screenshot.png": "/nickless-react-portfolio/static/media/horiseon-screenshot.13b219991f2102d227e7.png",
     "static/media/run-buddy-screenshot.png": "/nickless-react-portfolio/static/media/run-buddy-screenshot.f20a8dabc93164527e05.png",
@@ -14,12 +14,12 @@
     "static/media/nickless-quizzer-screenshot.png": "/nickless-react-portfolio/static/media/nickless-quizzer-screenshot.d2c48b62a0ced7dfaf27.png",
     "static/media/robot-gradiators-screenshot.png": "/nickless-react-portfolio/static/media/robot-gradiators-screenshot.75c031c5bd428d3dc596.png",
     "index.html": "/nickless-react-portfolio/index.html",
-    "main.c8dccbd2.css.map": "/nickless-react-portfolio/static/css/main.c8dccbd2.css.map",
-    "main.91bc486a.js.map": "/nickless-react-portfolio/static/js/main.91bc486a.js.map",
+    "main.cbf8238f.css.map": "/nickless-react-portfolio/static/css/main.cbf8238f.css.map",
+    "main.dd0d2652.js.map": "/nickless-react-portfolio/static/js/main.dd0d2652.js.map",
     "787.84bdce99.chunk.js.map": "/nickless-react-portfolio/static/js/787.84bdce99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8dccbd2.css",
-    "static/js/main.91bc486a.js"
+    "static/css/main.cbf8238f.css",
+    "static/js/main.dd0d2652.js"
   ]
 }
