@@ -11,6 +11,13 @@ import Resume from './components/Resume';
 function App() {
   const [projects] = useState([
     {
+      name: 'Inner Pattern',
+      description: `A MERN stack single-page application where users can track their thoughts and 'moods' through journal entries`,
+      screenshotURL: 'inner-pattern',
+      githubURL: 'https://github.com/Tyl3r-s/InnerPattern',
+      deployedURL: 'http://innerpattern.herokuapp.com/'
+    },
+    {
       name: 'Run Buddy',
       description: `The Run Buddy website showcases the company's objective, their team of trainers and how they can help you become a better you. The site is also equipped with a form to engage the potential new customers , as well as a Reach Out section so customers can message Run Buddy or find their information.`,
       screenshotURL: 'run-buddy',
