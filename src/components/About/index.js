@@ -15,7 +15,7 @@ function About() {
                 </p>
             </div>
             <div>
-                <img src={profileImage} alt="Omar in front of the CN Tower in Toronto" id="profile-pic" className=" max-w-full h-auto align-middle border-none" />
+                <img src={profileImage} alt="Omar in front of the CN Tower in Toronto" id="profile-pic" className="max-w-md h-auto align-middle border-none" />
             </div>
         </section>
     )
