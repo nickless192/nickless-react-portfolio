@@ -11,7 +11,9 @@ function About() {
                     >About Me</h2>
                 <p
                 className="w-1/2 text-blue-900 text-xl">
-                    My name is Omar Rodriguez, I'm an intermediate web developer and this is my React Portfolio! Nickless is a fun nickname I like to use, hence why you'll see it everywhere here.
+                    My name is Omar Rodriguez, I'm an intermediate web developer and this is my React Portfolio! <br />
+                    
+                    Full-stack web developer leveraging Mechanical engineering experience to provide unique perspectives on researching, problem-solving, and debugging to create reliable and adaptive web solutions. Earned a certificate in Full Stack Web Development from the University of Toronto Coding Boot Camp. Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development. Strengths in data analysis, teamwork, agile methodology and building projects from ideation to execution.
                 </p>
             </div>
             <div>

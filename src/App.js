@@ -9,6 +9,7 @@ import Resume from './components/Resume';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  // TO DO: retrieve this info from github and have a separate flag to show/hide from portfolio
   const [projects] = useState([
     {
       name: 'Inner Pattern',
