@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nickless-react-portfolio/static/css/main.cbf8238f.css",
-    "main.js": "/nickless-react-portfolio/static/js/main.d172a32f.js",
+    "main.js": "/nickless-react-portfolio/static/js/main.2cdf518b.js",
     "static/js/787.84bdce99.chunk.js": "/nickless-react-portfolio/static/js/787.84bdce99.chunk.js",
     "static/media/horiseon-screenshot.png": "/nickless-react-portfolio/static/media/horiseon-screenshot.13b219991f2102d227e7.png",
     "static/media/run-buddy-screenshot.png": "/nickless-react-portfolio/static/media/run-buddy-screenshot.f20a8dabc93164527e05.png",
@@ -11,16 +11,16 @@
     "static/media/profile-pic.jpg": "/nickless-react-portfolio/static/media/profile-pic.5a4ea1d6bb0b748815f6.jpg",
     "static/media/nickless-weather-radar-screenshot.png": "/nickless-react-portfolio/static/media/nickless-weather-radar-screenshot.aca6bec35d37261c1975.png",
     "static/media/nickless-socialize-api-screenshot.png": "/nickless-react-portfolio/static/media/nickless-socialize-api-screenshot.cfbc425e5b081d14d280.png",
-    "static/media/resume.pdf": "/nickless-react-portfolio/static/media/resume.abb736d8f3a7e33277ee.pdf",
     "static/media/nickless-quizzer-screenshot.png": "/nickless-react-portfolio/static/media/nickless-quizzer-screenshot.d2c48b62a0ced7dfaf27.png",
+    "static/media/resume.pdf": "/nickless-react-portfolio/static/media/resume.0d24c09bbfd44da19280.pdf",
     "static/media/robot-gradiators-screenshot.png": "/nickless-react-portfolio/static/media/robot-gradiators-screenshot.75c031c5bd428d3dc596.png",
     "index.html": "/nickless-react-portfolio/index.html",
     "main.cbf8238f.css.map": "/nickless-react-portfolio/static/css/main.cbf8238f.css.map",
-    "main.d172a32f.js.map": "/nickless-react-portfolio/static/js/main.d172a32f.js.map",
+    "main.2cdf518b.js.map": "/nickless-react-portfolio/static/js/main.2cdf518b.js.map",
     "787.84bdce99.chunk.js.map": "/nickless-react-portfolio/static/js/787.84bdce99.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cbf8238f.css",
-    "static/js/main.d172a32f.js"
+    "static/js/main.2cdf518b.js"
   ]
 }
