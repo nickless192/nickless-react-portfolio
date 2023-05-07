@@ -7,7 +7,7 @@ function Footer() {
             <h2
                 className="text-blue-700 font-bold">Made with ❤️ by Omar Rodriguez</h2>
             <p className="mb-2">
-                &copy; 2022 Nickless192
+                &copy; 2023 Nickless192
             </p>
             <div className="text-blue-800 mb-2">
                 <a href="https://github.com/nickless192" target="_blank" rel="noreferrer">Link to Github Account</a>
